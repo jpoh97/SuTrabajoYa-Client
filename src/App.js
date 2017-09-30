@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import axios from 'axios'
+import { Button, Card, Row, Col } from 'react-materialize'
 
 const url = 'https://api.mercadolibre.com/sites/MCO/search?q='
 
@@ -48,13 +49,13 @@ class App extends Component {
 
  	render(){ //aqui va todo lo referente a la vista
      return (
-       <div>
+       <div class="container">
          <label>Buscar producto</label>
          <br/>
          <input type="text" onChange={this.textChanged}></input>
          <br/>
          <br/>
-         <input type="submit" value="Buscar" onClick={this.getProducts} />
+         <Button onClick={this.getProducts} >Buscar</Button>
          <br/>
          <br/>
          <div id="showProducts"><h3>Lista de productos</h3></div>
