@@ -19,3 +19,7 @@ retorna todos los servicios que hay en el sistema
 retorna el servicio con id=serviceID
 ### `/service?search=string GET`
 retorna los servicios que contenga el string en serviceName o description
+### `/request POST` 
+crea una solicitud asociada asociada al propietario del token con en servicId recibe el json "serviceId" "description" "startDate" "endDate"
+### `/request GET` 
+devuelve las solicitudes asociadas al propietario del token en el header
