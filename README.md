@@ -27,3 +27,10 @@ devuelve las solicitudes asociadas al propietario del token en el header
 crea una cotizacion asociada al propietario del token con el requestId recibe el json "requestId" "description" "userEmail" "startDate" "validDays" "cost"
 ### `/estimation GET` 
 devuelve las cotizaciones asociadas al propietario del token en el header
+### `/contract POST` 
+crea un contrato asociada al propietario del token con el estimationId recibe el json "estimationId" "description" "startDate" "endDate" "cost"
+### `/contract GET` 
+devuelve los contratos asociados al propietario del token en el header
+
+
+        
