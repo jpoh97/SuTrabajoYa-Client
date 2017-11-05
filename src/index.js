@@ -1,9 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import registerServiceWorker from './registerServiceWorker'
-import App from './App'
+import CreateClient from './CreateClient'
+import Login from './Login'
 
 
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(<CreateClient />, document.getElementById('root'))
 
 registerServiceWorker()
