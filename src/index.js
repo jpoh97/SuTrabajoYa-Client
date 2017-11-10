@@ -1,10 +1,16 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import registerServiceWorker from './registerServiceWorker'
-import CreateClient from './CreateClient'
-import Login from './Login'
+import React from "react";
+import ReactDOM from "react-dom";
+import { Router, Route, IndexRoute, hashHistory } from "react-router";
 
+import Service from "./pages/Service";
 
-ReactDOM.render(<CreateClient />, document.getElementById('root'))
+const app = document.getElementById('root');
 
-registerServiceWorker()
+ReactDOM.render(
+  <Router history={hashHistory}>
+    <Route path="/" component={Service}>
+      <IndexRoute component={Service}></IndexRoute>
+    </Route>
+  </Router>,
+app);
+
