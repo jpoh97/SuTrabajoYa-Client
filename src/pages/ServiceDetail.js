@@ -8,7 +8,7 @@ import { Row, Col } from 'react-materialize';
 
 const url = 'https://qfoi6sqsdi.execute-api.us-east-1.amazonaws.com/Prod/service'
 
-export default class Service extends React.Component {
+export default class ServiceDetail extends React.Component {
 
    constructor(props){
     super(props); //propiedades
@@ -52,18 +52,10 @@ export default class Service extends React.Component {
 
   render() {
     const { location } = this.props;
-    this.getServices();
+    //this.getServices();
     return (
       <div class="container">
 
-        <Nav location={location} />        
-        <br/>
-        <Row>
-          <Col s={12} m={10} l={8} className='grid-example offset-m1 offset-l2'> 
-            <div id="showServices"></div>
-          </Col>
-        </Row>
-        <MyFooter />
       </div>
 
     );
